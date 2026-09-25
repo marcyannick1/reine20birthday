@@ -1,0 +1,2 @@
+Dépose tes photos ici (ex. photo1.jpg, photo2.jpg...),
+puis indique-les dans src/data.js : src: "/photos/photo1.jpg"
