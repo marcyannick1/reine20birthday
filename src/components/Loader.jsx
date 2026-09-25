@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { PRENOM, PHOTOS } from "../data.js";
 
-const DUREE = 4000; // durée du compteur 0 → 20, en millisecondes
+const DUREE = 3800; // durée du compteur 0 → 20, en millisecondes
 
 function message(n) {
   if (n < 6) return "On emballe tes cadeaux…";

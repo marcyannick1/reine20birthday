@@ -12,12 +12,12 @@ export const SIGNATURE = "mr H";
 // Photos : dépose tes images dans public/photos/ puis indique
 // leur nom ici, ex. src: "/photos/photo1.jpg". Laisse "" pour un cadre vide.
 export const PHOTOS = [
-  { src: "../photos/b1a389c0-586d-4c67-9cc1-68ae46475771.png", legende: "Ce regard qui me fait craquer" },
-  { src: "../photos/2941cf19-2ead-4f8f-a53d-fdd03182661f.jpg", legende: "Toujours aussi stylée" },
-  { src: "../photos/PHOTO-2025-11-25-22-33-07.jpg", legende: "Même le miroir est jaloux" },
-  { src: "../photos/PHOTO-2026-03-06-12-28-11.jpg", legende: "Ton plus beau sourire" },
-  { src: "../photos/e4f763a2-da9e-423d-80db-ee7ed84aac41.png", legende: "Lunettes ou cheveux courts ? Toujours parfaite" },
-  { src: "../photos/7021606c-4279-4e00-b92c-0d8391030f0f.png", legende: "Des fleurs pour ma Reine" },
+  { src: "/photos/b1a389c0-586d-4c67-9cc1-68ae46475771.png", legende: "Ce regard qui me fait craquer" },
+  { src: "/photos/2941cf19-2ead-4f8f-a53d-fdd03182661f.jpg", legende: "Toujours aussi stylée" },
+  { src: "/photos/PHOTO-2025-11-25-22-33-07.jpg", legende: "Même le miroir est jaloux" },
+  { src: "/photos/PHOTO-2026-03-06-12-28-11.jpg", legende: "Ton plus beau sourire" },
+  { src: "/photos/e4f763a2-da9e-423d-80db-ee7ed84aac41.png", legende: "Lunettes ou cheveux courts ? Toujours parfaite" },
+  { src: "/photos/7021606c-4279-4e00-b92c-0d8391030f0f.png", legende: "Des fleurs pour ma Reine" },
   // { src: "../photos/IMG_1497.jpg", legende: "Et plein d'autres à venir" },
 ];
 

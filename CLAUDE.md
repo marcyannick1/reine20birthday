@@ -26,6 +26,8 @@ There are no tests, linter, or formatter configured.
 - **Scroll reveals**: any element with a `data-reveal` attribute (value picks the animation: none/`fade`/`left`/`zoom`/`drop`/`pop`) starts hidden and gets a `data-vu` attribute from the IntersectionObserver in `src/useReveal.js`. It must be an attribute, not a class: React rewrites `className` on re-render (e.g. `.gift` toggling `is-open`), which would wipe it and hide the element again. Stagger with `style={delai(i, pas)}` (sets `--d`). The observer only starts when the loader's button is clicked (`onDepart`), so the hero animates as the loader fades. The keyframes use the individual `translate`/`scale`/`rotate` properties so they don't clash with the existing `transform`s on `.gift` hover and `.polaroid` tilt.
 - **`src/styles.css`** is one global stylesheet; theme colors and font stacks are CSS variables in `:root` at the top. Fonts (Instrument Serif, Caveat, Figtree) load from Google Fonts in `index.html`. Animations respect `prefers-reduced-motion`.
 
-## Photos gotcha
+## Photos
 
-The README says photos belong in `public/photos/` and are referenced as `/photos/xxx.jpg`. Currently, however, the images live in the root-level `photos/` folder and `data.js` references them as `../photos/...`. That resolves in the Vite dev server (which serves the project root) but those files are **not copied into `dist/`** on build, so the gallery will break in production. Before building for deployment, move the images into `public/photos/` and use `/photos/<file>` paths.
+Images live in `public/photos/` and are referenced in `data.js` as `/photos/<file>`. Don't put them anywhere else (e.g. a root-level `photos/` with `../photos/...` paths): the Vite dev server would still serve them, but they aren't copied into `dist/`, so the gallery breaks once deployed (this happened on Vercel).
+
+Deployed on Vercel from `github.com/marcyannick1/reine20birthday`; Vercel builds the pushed commit, so local changes only show up after a push.
